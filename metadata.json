@@ -1,0 +1,5 @@
+{
+  "name": "KINGS POINT - Dodoma's Premier Dining",
+  "description": "Experience the best food and drinks in Dodoma. Premium social dining, online ordering, and local Tanzanian pride.",
+  "requestFramePermissions": ["geolocation"]
+}

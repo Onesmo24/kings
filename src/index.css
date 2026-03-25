@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-gold: #C5A059;
+  --color-brand-black: #0A0A0A;
+  --color-brand-white: #FAF9F6;
+  --color-brand-cream: #F5F5F0;
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-white text-brand-black font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold tracking-tight;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-brand-gold text-white px-6 py-3 rounded-full font-semibold transition-all hover:opacity-90 active:scale-95 flex items-center justify-center gap-2;
+  }
+  
+  .btn-secondary {
+    @apply border-2 border-brand-gold text-brand-gold px-6 py-3 rounded-full font-semibold transition-all hover:bg-brand-gold hover:text-white active:scale-95 flex items-center justify-center gap-2;
+  }
+  
+  .card-premium {
+    @apply bg-white rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-gray-100 overflow-hidden transition-all hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] hover:-translate-y-1;
+  }
+
+  .text-gold {
+    @apply text-brand-gold;
+  }
+
+  .bg-gold {
+    @apply bg-brand-gold;
+  }
+
+  .bg-black {
+    @apply bg-brand-black;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap');
